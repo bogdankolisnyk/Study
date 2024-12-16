@@ -9,4 +9,4 @@ elif first_part_of_list == second_part_of_list:
     print(numbers, '=>', '[',numbers[0:first_part_of_list],',',numbers[second_part_of_list:len(numbers)],']')
 # elif first_part_of_list == second_part_of_list == 0:
 else:
-    print(numbers[0], numbers[0])
+    print(numbers[first_part_of_list], numbers[second_part_of_list])
