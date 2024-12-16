@@ -1,4 +1,4 @@
-numbers = []
+numbers = [5,6,7,12,45,4,7]
 first_part_of_list = round(len(numbers) / 2)
 second_part_of_list = len(numbers) // 2
 if first_part_of_list == 0:
