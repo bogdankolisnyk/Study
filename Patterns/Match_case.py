@@ -16,6 +16,7 @@
 #     case _:
 #         print('Invalid value')
 from ctypes import HRESULT
+from operator import truediv
 
 # number = (1, 8, 5, 7)
 # print(number[-3])
@@ -93,15 +94,46 @@ numbers_1 = [77, 5, 7, 4]
 # else:
 #     print("No")
 
-text = "hello. goodbye."
-separator = '. '
-sentences = text.split(separator)
-print(sentences)
+# text = "hello. goodbye."
+# separator = '. '
+# sentences = text.split(separator)
+# print(sentences)
+#
+# result = []
+#
+# for sent in sentences:
+#     result.append(sent.capitalize())
+# print(result)
+# result_sentence = separator.join(result)
+# print(result_sentence)
 
-result = []
+# num = 0
+#
+# while True:
+#
+#     if num == 3:
+#         num += 1
+#         print('You win!')
+#         continue
+#     if num > 5:
+#         print('You lose')
+#         break
+#     print(num)
+#     num += 1
 
-for sent in sentences:
-    result.append(sent.capitalize())
-print(result)
-result_sentence = separator.join(result)
-print(result_sentence)
+while True:
+    rating = int(input('Enter your rating from 1 to 3: (0 for exit)'))
+
+    if rating == 0:
+        print('Exit')
+        break
+    if rating > 1 or rating > 3:
+        print('Invalid value!')
+        continue
+    match rating:
+        case 1:
+            print('Bad rating')
+        case 2:
+            print('Normal rating')
+        case 3:
+            print('Good rating')
