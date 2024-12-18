@@ -15,29 +15,93 @@
 #         print(number1 / number2)
 #     case _:
 #         print('Invalid value')
+from ctypes import HRESULT
 
 # number = (1, 8, 5, 7)
 # print(number[-3])
-numbers = [2,6,4,55,7,9,12]
-print(numbers[-1::6] + numbers[0:6])
+# numbers = [2,6,4,55,7,9,12]
+# # numbers[3] = 1
+# numbers.append(2)
+# numbers.insert(1, 3)
+# numbers.remove(55)
+# del numbers[0]
+# print(numbers)
+# print(numbers[::-1])
 # print(numbers[-1])
 # print(numbers[1:5:1])
 # print(numbers[::-1])
 # print(numbers[3::-1])
+
 # names = ['Petya', 'Vasya']
 # name1, name2 = names
 # print(name1)
 # print(name2)
 # print(names)
 
-# numbers = [1, 1, 2, 5, 77, 1, 6, 1]
-# # numbers.remove(1)
-# # print(numbers.index(1))
-# # print(numbers.pop(3))
-# # print(numbers)
-# # print(numbers.count(1))
+numbers = [1, 3, 2, 5, 77, 1, 6, 1]
+numbers_1 = [77, 5, 7, 4]
+# numbers.remove(1)
+# print(numbers)
+# print(numbers.index(1))
+# print(numbers.pop(3))
+# print(numbers)
+# print(numbers.count(1))
 # print(numbers)
 # numbers.sort()
 # print(numbers)
 # numbers_sorted = sorted(numbers)
 # print(numbers_sorted)
+# if not 77 in numbers:
+#     print('no')
+# else:
+#     print('yes')
+# print(len(numbers))
+# numbers *= numbers_1
+# print(numbers)
+
+# price = 10
+# my_money = 15
+# my_money -= price
+# print(my_money)
+
+# orange_price = .5
+# my_money = 20
+# tea_price = 14
+# if my_money > orange_price:
+#     print("I buy orange")
+# else:
+# # Вкладений умовний оператор if зі своїм блоком else
+#     if my_money > tea_price:
+#         print("Not orange, just tea")
+#     else:
+#         print("I buy apple")
+# print("The end")
+
+# number_a = 17
+# number_b = 21
+#
+# if number_b > 20 or number_a > 20:
+#     if number_a > 20:
+#         print('>20')
+#     print("Yes")
+# else:
+#     print("No")
+
+# number_a = 17
+# if not number_a > 20:
+#     print("Yes")
+# else:
+#     print("No")
+
+text = "hello. goodbye."
+separator = '. '
+sentences = text.split(separator)
+print(sentences)
+
+result = []
+
+for sent in sentences:
+    result.append(sent.capitalize())
+print(result)
+result_sentence = separator.join(result)
+print(result_sentence)
