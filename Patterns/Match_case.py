@@ -15,8 +15,8 @@
 #         print(number1 / number2)
 #     case _:
 #         print('Invalid value')
-from ctypes import HRESULT
-from operator import truediv
+# from ctypes import HRESULT
+# from operator import truediv
 
 # number = (1, 8, 5, 7)
 # print(number[-3])
@@ -121,19 +121,19 @@ numbers_1 = [77, 5, 7, 4]
 #     print(num)
 #     num += 1
 
-while True:
-    rating = int(input('Enter your rating from 1 to 3: (0 for exit)'))
-
-    if rating == 0:
-        print('Exit')
-        break
-    if rating > 1 or rating > 3:
-        print('Invalid value!')
-        continue
-    match rating:
-        case 1:
-            print('Bad rating')
-        case 2:
-            print('Normal rating')
-        case 3:
-            print('Good rating')
+# while True:
+#     rating = int(input('Enter your rating from 1 to 3: (0 for exit)'))
+#
+#     if rating == 0:
+#         print('Exit')
+#         break
+#     if rating > 1 or rating > 3:
+#         print('Invalid value!')
+#         continue
+#     match rating:
+#         case 1:
+#             print('Bad rating')
+#         case 2:
+#             print('Normal rating')
+#         case 3:
+#             print('Good rating')
