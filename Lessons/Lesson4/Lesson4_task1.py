@@ -1,11 +1,11 @@
-numbers = [0, 1, 0, 12, 3]
-digits = numbers.copy()
-digit_zero = numbers.copy()
+numbers = [9, 0, 7, 31, 0, 45, 0, 45, 0, 45, 0, 0, 96, 0]
+digits = []
+digit_zero = []
 
-for number in digits:
-    if number != 0:
-        print(number, end=' ')
-for zero in digit_zero:
-    if zero == 0:
-        print(zero, end=' ')
+for i in numbers:
+    if i != 0:
+        digits.append(i)
+    else:
+        digit_zero.append(i)
+print(digits + digit_zero)
 
