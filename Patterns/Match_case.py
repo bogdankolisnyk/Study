@@ -137,3 +137,33 @@ numbers_1 = [77, 5, 7, 4]
 #             print('Normal rating')
 #         case 3:
 #             print('Good rating')
+
+# number = 0
+#
+# while number < 10:
+#     number = number + 1 # До continue !!!!
+#     if number == 5:
+#         continue
+#     print(number)
+
+# number = int(input("input positive number "))
+# i = 2
+# while i < number:
+#     if number % i == 0:
+# 				# Якщо число ділиться без залишку на інше число, то це число не є простим
+#         print("It is not a prime number")
+#         break
+#     i = i + 1
+# else: # виконається тільки якщо break в циклі не буде викликаний.
+#     print("It is a prime number")
+
+a = int(input("Input a "))
+b = int(input("Input b "))
+i = 0
+while i < a: # Висота
+    j = 0
+    while j < b: # ширина
+        print("*", end='') # рядок не буде переведено
+        j += 1
+    print()
+    i += 1
