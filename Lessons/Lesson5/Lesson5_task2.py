@@ -18,7 +18,7 @@ while True:
     else:
         print('Invalid operation.')
 
-    continue_calculation = input("Do you want to continue? (y/n): ").strip().lower()
+    continue_calculation = input("Do you want to continue? (y/n): ")
     if continue_calculation != 'y':
         print("Goodbye!")
         break
