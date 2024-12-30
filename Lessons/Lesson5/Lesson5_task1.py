@@ -3,7 +3,7 @@ import keyword
 
 var = input("Enter variable: ")
 
-invalid_chars = string.punctuation.replace("_", "")  # Знаки пунктуації без "_"
+invalid_chars = string.punctuation.replace("_", "")
 
 if not var:
     print("Wrong variable: input cannot be empty.")
