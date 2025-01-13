@@ -17,6 +17,7 @@
 #         print('Invalid value')
 # from ctypes import HRESULT
 # from operator import truediv
+import keyword
 
 # number = (1, 8, 5, 7)
 # print(number[-3])
@@ -156,14 +157,181 @@ numbers_1 = [77, 5, 7, 4]
 #     i = i + 1
 # else: # виконається тільки якщо break в циклі не буде викликаний.
 #     print("It is a prime number")
+#
+# a = int(input("Input a "))
+# b = int(input("Input b "))
+# i = 0
+# while i < a: # Висота
+#     j = 0
+#     while j < b: # ширина
+#         print("*", end='') # рядок не буде переведено
+#         j += 1
+#     print()
+#     i += 1
 
-a = int(input("Input a "))
-b = int(input("Input b "))
-i = 0
-while i < a: # Висота
-    j = 0
-    while j < b: # ширина
-        print("*", end='') # рядок не буде переведено
-        j += 1
-    print()
-    i += 1
+# my_string = """Python
+# 'is'
+# awesome
+# """
+# print(my_string)
+
+# my_string = "Python is awesome"
+# print(my_string[6]) # виведе: P
+# print(my_string[10]) # виведе: y
+
+# my_string = "python"
+# for char in my_string:
+#     print(char, end='')
+# import keyword
+# var = input("Enter variable: ")
+# if var in keyword.kwlist:
+#     print(type("Wrong variable"))
+# else:
+#     print(type("Correct variable"))
+
+# n1, n2 = 10, 20
+# print(n1 > n2)
+# print(type(1 == n2))
+
+# i = 0
+# while i < 5:
+#     print(i)
+#     i += 1
+
+# name = 'mike '
+# surname = 'bobik '
+# age = 33
+# print(name  + surname  + str(age))
+
+# text = "hello my dear friend. how are you."
+# search_item = '. '
+#
+# sentences = text.split(search_item)
+# print(sentences)
+#
+# result = []
+#
+# for sentence in sentences:
+#     result.append(sentence.capitalize())
+#
+# print(result)
+#
+# result_sentences = search_item.join(result)
+#
+# print(result_sentences)
+
+# matrix = [
+#     [23, 34, 14, 74],
+#     [23, 34, 12, 74],
+#     [22, 47, 65, 80],
+#     [65, 4, 43, 69]
+# ]
+#
+# for row in matrix:
+#     for number in row:
+#         print(number, end=' ')
+#     print()
+
+# import random
+#
+# matrix = []
+#
+# for i in range(5):
+#     matrix.append([])
+#     # print(matrix)
+#     for j in range(5):
+#         matrix[i].append(random.randint(50, 99))
+#         # print(matrix)
+#
+# for i in range(len(matrix)):
+#     for j in range(len(matrix[i])):
+#         print(matrix[i][j], end=" ")
+#     print()
+#
+# general_diagonal_sum = 0
+#
+#
+#
+# for i in range(len(matrix)):
+#     general_diagonal_sum += matrix[i][len(matrix[i]) - i - 1]
+#     print(matrix[i][len(matrix[i]) - i - 1])
+#     i += 1
+#
+# print(f'General_diagonal_sum: {general_diagonal_sum}')
+#
+# number = []
+#
+# for i in range(len(matrix)):
+#     number.append(matrix[i][len(matrix[i]) - 1 - i])
+# print(number)
+# print(f'Min number: {min(number)}')
+# print(f'Max number: {max(number)}')
+
+# for row in matrix:
+#     for number in row:
+#         print(number, end=" ")
+#     print()
+
+
+# text = "Change your mind!"
+# var = "a"
+# if text.find(var) != -1:
+#     print(f'found {var}')
+# else:
+#     print(f'not found {var}')
+
+# text = ("Change your mind",)
+# print(hash(1))
+#
+# human = {"name": "Alexander",
+#         "lastname": "Glock",
+#         "age": 36,
+#         "address": {"street": "Lisova", "house": 87, "flat": 705}
+# }
+# #
+# # house = human["address"]["house"]
+# # print(house) # виведе: 87
+# #
+# # # # Міняємо значення для квартири
+# # human["address"]["flat"] = 700
+# # print(human["address"]["flat"])
+#
+# d2 = human.copy()
+# d2['address']["flat"] = '1000'
+# print(d2)
+
+
+# d1 = dict.fromkeys(human)
+# print(human.keys())
+# print(human.values())
+#
+# print('Alexander' in human.values())
+
+# from   collections import OrderedDict
+# dct = OrderedDict({'apple': 4, 'banana': 3, 'orange': 2, 'pear': 1})
+# dct_sec = list(dct.keys())[1]
+# dct['orange'] = 1
+# dct.move_to_end('banana')
+# dct.move_to_end('orange', last=False)
+# print(dct.pop(dct_sec))
+# print(dct_sec)
+# print(dct)  # виведе: OrderedDict([('apple', 4), ('banana', 3), ('orange', 2), ('pear', 1)])
+# print(dct.popitem(last=False))
+# print(len(dct))
+# print(dct)
+
+# def say_hello():
+#     print(f'Hello {name}')
+#     # name = "test"
+#     # print(f'Hello {name}')
+#     # print(10 * 2)
+# say_hello()
+# say_hello('Test user')
+# name = 'Anton'
+# say_hello(name)
+# # print(name)
+# username = 'Petrov'
+# say_hello(username)
+import math
+for i in range(10):
+    print(fib(i), end=' ')
