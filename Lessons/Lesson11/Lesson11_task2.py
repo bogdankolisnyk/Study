@@ -1,7 +1,7 @@
 def generate_cube_numbers(end):
     """ Генератор кубів чисел від 2 до заданої межі """
     num = 2
-    while num ** 3 < end:
+    while num ** 3 <= end:
         yield num ** 3
         num += 1
 
