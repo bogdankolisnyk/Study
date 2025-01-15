@@ -333,5 +333,9 @@ numbers_1 = [77, 5, 7, 4]
 # username = 'Petrov'
 # say_hello(username)
 import math
-for i in range(10):
-    print(fib(i), end=' ')
+# for i in range(10):
+#     print(fib(i), end=' ')
+
+square = lambda num1, num2: num1 * num2
+print()
+print(lambda:print("Hell world!"))
