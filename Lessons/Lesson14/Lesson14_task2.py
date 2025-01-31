@@ -23,13 +23,11 @@ class Student(Human):
     def __str__(self):
         return f"{super().__str__()}, Record Book: {self.record_book}"
 
-    # Порівняння студентів по їх строковому представлення
     def __eq__(self, other):
         if isinstance(other, Student):
             return str(self) == str(other)
         return False
 
-    # Реалізація методу хешування
     def __hash__(self):
         return hash(str(self))
 
@@ -59,33 +57,25 @@ class Group:
         all_students = "\n".join([str(student) for student in self.group])
         return f'Group Number: {self.number}\nStudents:\n{all_students}'
 
-
-# Створення студентів
 st1 = Student('Male', 30, 'Steve', 'Jobs', 'AN142')
 st2 = Student('Female', 25, 'Liza', 'Taylor', 'AN145')
 
-# Створення групи
 gr = Group('PD1')
 gr.add_student(st1)
 gr.add_student(st2)
 
-# Виведення групи
 print(gr)
 
-# Тести на пошук студентів
-assert gr.find_student('Jobs') == st1  # Повертає студента 'Steve Jobs'
-assert gr.find_student('Jobs2') is None  # Студент з таким прізвищем не знайдений
+assert gr.find_student('Jobs') == st1
+assert gr.find_student('Jobs2') is None
 
-# Видалення студента
 gr.delete_student('Taylor')
-print(gr)  # Після видалення залишився тільки один студент
+print(gr)
 
-# Тест на спробу додавання більше 10 студентів
 try:
-    # Додаємо ще 9 студентів для тесту
     for i in range(9):
         st = Student('Male', 20, f'First{i}', f'Last{i}', f'AN1{i}')
         gr.add_student(st)
     gr.add_student(Student('Male', 21, 'Extra', 'Student', 'AN200'))  # Повинен викликати помилку
 except StudentLimitExceededError as e:
-    print(e)  # Достигнуто ліміту студентів
+    print(e)
